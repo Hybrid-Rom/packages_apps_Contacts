@@ -213,6 +213,7 @@ public class TextFieldsEditorView extends LabeledEditorView {
             fieldView.setTextAppearance(getContext(), android.R.style.TextAppearance_Medium);
             fieldView.setPadding(fieldView.getPaddingLeft(), mEditTextTopPadding,
                     fieldView.getPaddingRight(), mEditTextBottomPadding);
+            fieldView.setHintTextColor(R.color.secondary_text_color);
             fieldView.setGravity(Gravity.TOP);
             mFieldEditTexts[index] = fieldView;
             fieldView.setId(vig.getId(state, kind, entry, index));
